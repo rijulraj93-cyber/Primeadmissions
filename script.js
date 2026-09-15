@@ -5,13 +5,6 @@ const course = document.querySelector('#course');
 const submit = document.querySelector('.form-submit');
 const formNote = document.querySelector('#form-note');
 
-document.title = document.title.replace('Prime Admission', 'Prime Admissions');
-document.querySelector('meta[name="description"]').content = document.querySelector('meta[name="description"]').content.replace('Prime Admission', 'Prime Admissions');
-const brandTextWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-while (brandTextWalker.nextNode()) {
-  brandTextWalker.currentNode.nodeValue = brandTextWalker.currentNode.nodeValue.replaceAll('Prime Admission', 'Prime Admissions');
-}
-
 window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 12));
 
 menuButton.addEventListener('click', () => {
