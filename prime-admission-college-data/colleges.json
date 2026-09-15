@@ -1,0 +1,285 @@
+[
+  {
+    "id": "rvce-bengaluru",
+    "name": "R.V. College of Engineering",
+    "short_name": "RVCE",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "category": "Engineering",
+    "type": "Private engineering college",
+    "website": "https://rvce.edu.in/",
+    "academic_year": "2026-27",
+    "courses": [
+      "B.E. Computer Science and Engineering",
+      "B.E. Artificial Intelligence and Machine Learning",
+      "B.E. CSE - Data Science",
+      "B.E. CSE - Cyber Security",
+      "B.E. Information Science and Engineering",
+      "B.E. Electronics and Communication Engineering",
+      "B.E. Electrical and Electronics Engineering",
+      "B.E. Mechanical Engineering",
+      "B.E. Civil Engineering",
+      "B.E. Aerospace Engineering",
+      "B.E. Biotechnology",
+      "B.E. Chemical Engineering",
+      "B.E. Electronics and Instrumentation Engineering",
+      "B.E. Industrial Engineering and Management",
+      "B.E. Telecommunication Engineering"
+    ],
+    "duration": "4 years for B.E.",
+    "admission_routes": [
+      "KCET",
+      "COMEDK",
+      "Other institutional/admission routes as applicable"
+    ],
+    "fee": {
+      "status": "verify_current",
+      "note": "Do not display a current fee amount until the latest RVCE 2026-27 fee notification is verified.",
+      "reference_example": "RVCE official COMEDK fee document available for 2024-25; use only as historical reference."
+    },
+    "placements": {
+      "status": "not_populated",
+      "note": "Populate only from the latest official RVCE placement report."
+    },
+    "highlights": [
+      "Wide range of undergraduate engineering programs",
+      "Bengaluru location",
+      "Departments include CSE, ISE, ECE, EEE, AI/ML and other engineering disciplines"
+    ],
+    "source_urls": [
+      "https://rvce.edu.in/",
+      "https://naac.rvce.edu.in/rvce-home"
+    ],
+    "source_notes": "Official RVCE/NAAC pages list the engineering programs and current institutional information."
+  },
+  {
+    "id": "msrit-bengaluru",
+    "name": "Ramaiah Institute of Technology",
+    "short_name": "MSRIT",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "category": "Engineering",
+    "type": "Private engineering institute",
+    "website": "https://msrit.edu/",
+    "academic_year": "2026-27",
+    "courses": [
+      "B.E. Aerospace Engineering",
+      "B.E. Artificial Intelligence & Data Science",
+      "B.E. Artificial Intelligence & Machine Learning",
+      "B.E. Biotechnology",
+      "B.E. Chemical Engineering",
+      "B.E. Civil Engineering",
+      "B.E. Computer Science & Engineering",
+      "B.E. CSE - Artificial Intelligence & Machine Learning",
+      "B.E. CSE - Cyber Security",
+      "B.E. Electrical & Electronics Engineering",
+      "B.E. Electronics & Communication Engineering",
+      "B.E. Electronics & Instrumentation Engineering",
+      "B.E. Electronics & Telecommunication Engineering",
+      "B.E. Industrial Engineering & Management",
+      "B.E. Information Science & Engineering",
+      "B.E. Mechanical Engineering",
+      "B.E. Medical Electronics Engineering",
+      "B.Arch"
+    ],
+    "duration": "4 years for B.E.; 5 years for B.Arch",
+    "admission_routes": [
+      "KCET",
+      "COMEDK",
+      "Management",
+      "NRI",
+      "PIO",
+      "Foreign National"
+    ],
+    "fee": {
+      "status": "verify_current",
+      "note": "Official site provides 2026-27 fee-structure links, but the amount should be imported from the latest official fee document before publishing."
+    },
+    "placements": {
+      "companies_visited": 358,
+      "job_offers": 1892,
+      "highest_package_lpa": 50,
+      "average_package_lpa": 7.66,
+      "data_context": "Figures shown on the official placement page; page also contains historical context, so label the figures with the source/report period before publishing."
+    },
+    "highlights": [
+      "Broad B.E. program portfolio",
+      "2026-27 admissions announced on official site",
+      "Multiple admission categories including management and NRI/foreign routes"
+    ],
+    "source_urls": [
+      "https://msrit.edu/",
+      "https://msrit.edu/admissions.html",
+      "https://www.msrit.edu/placement.html"
+    ],
+    "source_notes": "Official MSRIT admissions page lists programs and 2026-27 admission routes. Official placement page contains placement figures; verify report year before presenting them as current."
+  },
+  {
+    "id": "bmsce-bengaluru",
+    "name": "B.M.S. College of Engineering",
+    "short_name": "BMSCE",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "category": "Engineering",
+    "type": "Private engineering college",
+    "website": "https://www.bmsce.ac.in/",
+    "academic_year": "2026-27",
+    "courses": [
+      "B.E. Civil Engineering",
+      "B.E. Electrical & Electronics Engineering",
+      "B.E. Industrial Engineering & Management",
+      "B.E. Electronics & Communication Engineering",
+      "B.E. Mechanical Engineering",
+      "B.E. Computer Science & Engineering",
+      "B.E. Chemical Engineering",
+      "B.E. Biotechnology",
+      "B.E. Artificial Intelligence & Machine Learning",
+      "B.E. Artificial Intelligence & Data Science",
+      "B.E. CSE - Data Science",
+      "B.E. CSE - Internet of Things & Cyber Security including Blockchain Technology",
+      "B.E. Computer Science & Business Systems",
+      "MBA",
+      "MCA",
+      "M.Tech programs"
+    ],
+    "duration": "4 years for B.E.; 2 years for MBA/MCA/M.Tech",
+    "admission_routes": [
+      "KCET",
+      "COMEDK",
+      "Management Quota",
+      "Other applicable routes"
+    ],
+    "fee": {
+      "management_quota_2026_27_lpa": {
+        "Civil Engineering": 6.0,
+        "Electrical & Electronics Engineering": 6.0,
+        "Industrial Engineering & Management": 6.0,
+        "Electronics & Communication Engineering": 9.0,
+        "Mechanical Engineering": 6.0,
+        "Computer Science & Engineering": 15.0,
+        "Chemical Engineering": 4.0,
+        "Biotechnology": 7.0,
+        "Artificial Intelligence & Machine Learning": 12.5,
+        "Artificial Intelligence & Data Science": 12.0,
+        "CSE - Data Science": 12.0,
+        "CSE - Internet of Things & Cyber Security including Blockchain Technology": 12.0,
+        "Computer Science & Business Systems": 10.0
+      },
+      "note": "Official BMSCE page publishes approved management fee structure for 2026-27. Treat these as annual management-fee figures and verify the latest notification before transaction/use."
+    },
+    "postgraduate_management_fee_2026_27_lpa": {
+      "MBA": 4.0,
+      "MCA": 3.5,
+      "M.Tech - Data Science": 3.0,
+      "M.Tech - Transportation & Engineering": 1.5,
+      "M.Tech - VLSI & Embedded Systems": 4.0
+    },
+    "placements": {
+      "status": "use_latest_report",
+      "historical_official_figures_available": {
+        "companies_visiting_each_year": "350+",
+        "companies_offering_above_6_lpa": "250+"
+      },
+      "note": "The official placement-achievements page currently states these figures; use the latest placement report for a time-specific dashboard."
+    },
+    "highlights": [
+      "BMSCE publishes 2026-27 management fee structures",
+      "Wide engineering program portfolio",
+      "Dedicated training and placement function",
+      "Bengaluru location"
+    ],
+    "source_urls": [
+      "https://www.bmsce.ac.in/",
+      "https://www.bmsce.ac.in/home/Under-Graduation",
+      "https://www.bmsce.ac.in/home/Post-Graduation",
+      "https://bmsce.ac.in/home/Placement-Achievements"
+    ],
+    "source_notes": "Official BMSCE pages provide 2026-27 fee information, program information and placement information."
+  },
+  {
+    "id": "pes-university-bengaluru",
+    "name": "PES University",
+    "short_name": "PESU",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "category": "University",
+    "type": "Private university",
+    "website": "https://pes.edu/",
+    "academic_year": "2026-27",
+    "campuses": [
+      "Ring Road Campus, Banashankari",
+      "Electronic City Campus",
+      "Hanumanth Nagar Campus"
+    ],
+    "courses": [
+      "B.Tech. Computer Science & Engineering",
+      "B.Tech. CSE - Artificial Intelligence & Machine Learning",
+      "B.Tech. Electronics & Communication Engineering",
+      "B.Tech. Mechanical Engineering",
+      "B.Tech. Electrical & Electronics Engineering",
+      "B.Tech. Biotechnology",
+      "MBA",
+      "MCA",
+      "MBBS",
+      "BCA",
+      "B.Des",
+      "BBA",
+      "B.Com programs",
+      "B.Sc programs",
+      "B.Pharm",
+      "Pharm.D"
+    ],
+    "duration": "4 years for B.Tech; 2 years for MBA/MCA",
+    "admission_routes": [
+      "KCET",
+      "JEE Main / KCET merit route for B.Tech",
+      "Higher Fee Category / Management",
+      "NRI / Foreign / Sponsored / OCI / PIO where applicable"
+    ],
+    "eligibility_example": "PES University states 60% aggregate in Physics + Mathematics + Chemistry in 10+2 for B.Tech, with JEE Main / KCET score requirements subject to current admission rules.",
+    "fee": {
+      "2026_27_status": "verify_current",
+      "2027_28_official_btech_annual_fee_reference": {
+        "CSE": 570000,
+        "CSE_AIML": 570000,
+        "ECE": 520000,
+        "Mechanical": 470000,
+        "EEE": 470000,
+        "Biotechnology": 470000
+      },
+      "note": "The official PES fee page currently publishes these B.Tech figures for 2027-28. Do not label them as 2026-27 fees. Keep 2026-27 fee field as verify_current until the correct fee notice is confirmed."
+    },
+    "intake_reference": {
+      "source_year": "2027-28",
+      "ring_road_btech_cse_total_seats": 720,
+      "ring_road_btech_cse_aiml_total_seats": 720,
+      "ring_road_btech_ece_total_seats": 480,
+      "ring_road_btech_mechanical_total_seats": 60,
+      "ring_road_btech_eee_total_seats": 60,
+      "ring_road_btech_biotechnology_total_seats": 60,
+      "note": "These are official 2027-28 intake figures and should not be presented as 2026-27 intake."
+    },
+    "placements": {
+      "status": "verify_latest_report",
+      "note": "PES official placement page describes 2026 placement outcomes and provides a placement brochure, but the current page's numeric counters are not populated in the retrieved text."
+    },
+    "highlights": [
+      "Multiple Bengaluru campuses",
+      "Large portfolio spanning engineering, medicine, management, commerce and other disciplines",
+      "B.Tech admissions use JEE Main/KCET routes according to current official admissions information"
+    ],
+    "source_urls": [
+      "https://pes.edu/",
+      "https://pes.edu/admissions/",
+      "https://pes.edu/fee/",
+      "https://pes.edu/programs/",
+      "https://pes.edu/intake/rr/",
+      "https://pes.edu/placements/"
+    ],
+    "source_notes": "Official PES pages provide program, admissions, fee, intake and placement information. Year-label all time-sensitive figures."
+  }
+]

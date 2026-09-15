@@ -141,3 +141,84 @@ if (fullFinderForm) {
     fullNote.style.color = '#5fc7d1';
   });
 }
+
+// Data-driven college surfaces: listing, search, compare, and detail pages share one source.
+const collegeData = window.PrimeAdmissionsCollegeData || [];
+const collegeGrid = document.querySelector('.college-grid');
+const compareSelects = Array.from(document.querySelectorAll('.compare-selects select'));
+const detailSection = document.querySelector('#college-detail');
+
+function collegeInitials(college) {
+  return college.short_name.slice(0, 2);
+}
+
+function renderCollegeCards(collegesToRender = collegeData) {
+  if (!collegeGrid) return;
+  collegeGrid.innerHTML = collegesToRender.map((college, index) => `<article class="college-card" data-college-id="${college.id}"><div class="college-logo ${['', 'blue', 'green', 'red'][index % 4]}">${collegeInitials(college)}</div><div><span class="location">${college.city} · ${college.category}</span><h3>${college.name}</h3><p>${college.type}</p><a class="text-link college-view-link" href="#college/${college.id}">View College <span>→</span></a></div><button class="save-button" aria-label="Save ${college.name}">♡</button></article>`).join('');
+  collegeGrid.querySelectorAll('.save-button').forEach((button) => button.addEventListener('click', () => {
+    button.classList.toggle('saved');
+    button.textContent = button.classList.contains('saved') ? '♥' : '♡';
+  }));
+}
+
+function populateCompare() {
+  compareSelects.forEach((select, index) => {
+    const selected = collegeData[index] || collegeData[0];
+    select.innerHTML = collegeData.map((college) => `<option value="${college.id}" ${college.id === selected.id ? 'selected' : ''}>${college.name}</option>`).join('');
+  });
+  compareSelects.forEach((select) => select.addEventListener('change', () => {
+    trackEvent('compare_college_select', { collegeId: select.value });
+    renderCompareRows();
+  }));
+  renderCompareRows();
+}
+
+function renderCompareRows() {
+  const table = document.querySelector('.compare-table');
+  if (!table || compareSelects.length === 0) return;
+  const selected = compareSelects.map((select) => collegeData.find((college) => college.id === select.value) || collegeData[0]);
+  const rows = [
+    ['Programs', (college) => `${college.courses.length} listed`],
+    ['Admission route', (college) => college.admission_routes.join(' / ')],
+    ['Location', (college) => `${college.city}, ${college.state}`],
+    ['Placement data', (college) => college.placements?.status === 'not_populated' ? 'Verify current report' : 'Available with source context']
+  ];
+  table.innerHTML = `<div class="table-label">Compare on</div><div class="table-head">${selected.map((college) => `<strong>${college.short_name}</strong>`).join('')}</div>${rows.map(([label, value]) => `<div class="table-row"><span>${label}</span>${selected.map((college) => `<b>${value(college)}</b>`).join('')}</div>`).join('')}`;
+}
+
+function showCollegeDetail(id) {
+  const college = collegeData.find((item) => item.id === id);
+  if (!college || !detailSection) return;
+  document.querySelector('#detail-category').textContent = `${college.category} · ${college.academic_year}`;
+  document.querySelector('#detail-name').textContent = college.name;
+  document.querySelector('#detail-meta').textContent = `${college.city}, ${college.state} · ${college.type} · ${college.duration}`;
+  document.querySelector('#detail-courses').innerHTML = college.courses.slice(0, 8).map((courseName) => `<li>${courseName}</li>`).join('');
+  document.querySelector('#detail-routes').innerHTML = college.admission_routes.map((route) => `<li>${route}</li>`).join('');
+  document.querySelector('#detail-highlights').innerHTML = college.highlights.map((highlight) => `<li>${highlight}</li>`).join('');
+  document.querySelector('#detail-website').href = college.website;
+  detailSection.hidden = false;
+  detailSection.scrollIntoView({ behavior: 'smooth' });
+  trackEvent('college_detail_view', { collegeId: id });
+}
+
+function routeCollegeHash() {
+  const match = location.hash.match(/^#college\/(.+)$/);
+  if (match) showCollegeDetail(match[1]);
+}
+
+renderCollegeCards();
+populateCompare();
+window.addEventListener('hashchange', routeCollegeHash);
+routeCollegeHash();
+
+if (searchInput) {
+  document.querySelector('#search-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const query = searchInput.value.trim().toLowerCase();
+    const results = collegeData.filter((college) => `${college.name} ${college.city} ${college.category} ${college.courses.join(' ')}`.toLowerCase().includes(query));
+    renderCollegeCards(query ? results : collegeData);
+    document.querySelector('#options').scrollIntoView({ behavior: 'smooth' });
+    closeSearch();
+    trackEvent('college_search', { query: query.slice(0, 80), resultCount: results.length });
+  });
+}
